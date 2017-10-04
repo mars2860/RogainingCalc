@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Rogaining Calc</string>
+
+    <string name="title_activity_main">Rogaining Calc</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="scores">Очки</string>
+    <string name="linearDist">По прямой</string>
+    <string name="scoresPerDist">Очки/км</string>
+    <string name="realDist">Расст.</string>
+    <string name="cp">КП</string>
+    <string name="optimalRoute">Лучш. М</string>
+    <string name="loadMap">Карта</string>
+    <string name="clear">Очистить</string>
+</resources>

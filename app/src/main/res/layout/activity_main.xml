@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.sysoev.anton.rogainingcalc.MainActivity">
+
+    <TextView
+        android:id="@+id/tvStaticScores"
+        android:text="@string/scores"
+        style="@style/Label"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvScores"
+        android:text="0"
+        style="@style/Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStaticScores"
+        android:layout_alignLeft="@+id/tvStaticScores"
+        android:layout_alignStart="@+id/tvStaticScores"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvStaticLinearDist"
+        android:text="@string/linearDist"
+        style="@style/Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvScores"
+        android:layout_alignLeft="@+id/tvStaticScores"
+        android:layout_alignStart="@+id/tvStaticScores"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvLinearDist"
+        android:text="0"
+        style="@style/Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStaticLinearDist"
+        android:layout_alignLeft="@+id/tvStaticScores"
+        android:layout_alignStart="@+id/tvStaticScores"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvStaticRealDist"
+        android:text="@string/realDist"
+        style="@style/Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLinearDist"
+        android:layout_alignLeft="@+id/tvStaticScores"
+        android:layout_alignStart="@+id/tvStaticScores"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvRealDist"
+        android:text="0"
+        style="@style/Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStaticRealDist"
+        android:layout_alignLeft="@+id/tvStaticScores"
+        android:layout_alignStart="@+id/tvStaticScores"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvStaticScoresPerDist"
+        android:text="@string/scoresPerDist"
+        style="@style/Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRealDist"
+        android:layout_alignLeft="@+id/tvStaticScores"
+        android:layout_alignStart="@+id/tvStaticScores"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvScoresPerDist"
+        android:text="0"
+        style="@style/Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStaticScoresPerDist"
+        android:layout_alignLeft="@+id/tvStaticScores"
+        android:layout_alignStart="@+id/tvStaticScores"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/tbAddCheckpoint"
+        android:text="@string/cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnLoadMap"
+        android:layout_alignStart="@+id/tvStaticScores"
+        android:layout_alignParentEnd="true"
+        style="@style/Btn" />
+
+    <Button
+        android:id="@+id/btnLoadMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loadMap"
+        android:layout_above="@+id/btnClear"
+        android:layout_alignStart="@+id/tvStaticScores"
+        android:layout_alignParentEnd="true"
+        style="@style/Btn" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        android:layout_above="@+id/btnOptimalRoute"
+        android:layout_alignStart="@+id/tvStaticScores"
+        android:layout_alignParentEnd="true"
+        style="@style/Btn" />
+
+    <Button
+        android:id="@+id/btnOptimalRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/optimalRoute"
+        android:layout_alignStart="@id/tvStaticScores"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        style="@style/Btn" />
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/pvMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
